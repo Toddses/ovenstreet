@@ -1,5 +1,5 @@
 // REQUIRED SETTINGS
-var siteUrl = 'example.dev';
+var siteUrl = 'ovenstreet.dev';
 
 // Include gulp
 var gulp = require('gulp');
