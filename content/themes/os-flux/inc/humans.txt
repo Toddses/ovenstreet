@@ -1,0 +1,20 @@
+
+────────────────────────────────────────────────────────────────────────────────
+Hey I made this!
+
+DEVELOPERS:
+  Todd Miller   @toddses
+
+UX DESIGNERS:
+  Todd Miller   @toddses
+
+UI Designers:
+  Todd Miller   @toddses
+
+TECHNOLOGY COLOPHON:
+  Wordpress, HTML5, CSS3, Bourbon, Neat, JavaScript,
+    Gulp, Bower, SASS, Normalize, Modernizr, Sublime Text
+
+────────────────────────────────────────────────────────────────────────────────
+
+Email me: todd@rainydaymedia.net

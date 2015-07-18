@@ -1,0 +1,48 @@
+/* =Colors
+----------------------------------------------- */
+// Color Map
+$colors:
+(
+    "blue50": #ECEFF1,
+    "blue100": #CFD8DC,
+    "blue200": #B0BEC5,
+    "blue500": #607D8B,
+    "blue700": #455A64,
+    "pink50": #FCE4EC,
+    "pink100": #F8BBD0,
+    "pink200": #F48FB1,
+    "pink500": #E91E63,
+    "pink700": #C2185B,
+    "pink900": #880E4F,
+    "tan": #fff4ea,
+    "black": #000000,
+    "white": #ffffff
+);
+
+// get a color from the color map
+@function get-color($color) {
+    @if map-has-key($colors, $color) {
+        $color: map-get($colors, $color);
+    } @else {
+        @if type-of($color) != color {
+            @error "Color name: `#{$color}` not found."
+        }
+    }
+
+    @return $color;
+}
+
+// color classes
+@each $colorName, $color in $colors {
+    .text-#{$colorName} {
+        color: $color !important;
+    }
+
+    .bg-#{$colorName} {
+        background-color: $color !important;
+    }
+
+    .border-#{$colorName} {
+        border-color: $color !important;
+    }
+}

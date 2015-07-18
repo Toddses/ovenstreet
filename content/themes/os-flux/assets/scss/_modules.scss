@@ -1,0 +1,370 @@
+/* =Modules
+----------------------------------------------- */
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.black.overlay {
+    background-color: get-color(black);
+    opacity: 0.5;
+}
+
+.white.overlay {
+    background-color: get-color(white);
+    opacity: 0.85;
+}
+
+.site-header {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+
+    img {
+        height: 55px;
+        padding: 5px 0;
+    }
+}
+
+.site-header .social {
+    display: inline-block;
+    height: 40px;
+    margin: 8px 5px 0;
+}
+
+.social-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    @include media($desktop) {
+        bottom: 20px;
+        right: 20px;
+        top: auto;
+    }
+
+    object {
+        display: inline-block;
+        height: 30px;
+        opacity: 0.65;
+        margin-left: 2px;
+        margin-right: 2px;
+        transition: opacity 0.3s;
+
+        @include media($desktop) {
+            height: 40px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+
+    a:hover {
+        object {
+            opacity: 1;
+        }
+    }
+
+    .follow-us {
+        transform: translateY(10px) scale(0.8, 0.8);
+        opacity: 0;
+        transition: all 0.1s;
+    }
+
+    .follow-us.is-active {
+        transform: translateY(5px) scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.social-icon {
+    fill: get-color("white");
+}
+
+.svg-link {
+    position: relative;
+    display: inline-block;
+}
+
+.svg-link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.site-footer {
+    width: 100%;
+    display: block;
+
+    img {
+        height: 45px;
+        opacity: 0.85;
+    }
+
+    a {
+        opacity: 0.75;
+        transition: opacity 0.3s;
+    }
+
+    a:hover {
+        opacity: 1;
+    }
+
+    .copyright {
+        opacity: 0.75;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-header {
+    line-height: 55px;
+}
+
+.about-us {
+    overflow: hidden;
+
+    .background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(assets/img/about-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        filter: grayscale(100%);
+
+        @include media($desktop) {
+            width: 50%;
+            left: 50%;
+        }
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.85);
+
+            @include media($desktop) {
+                background: linear-gradient(to left, rgba(0, 0, 0, 0), get-color("white"));
+            }
+        }
+    }
+
+    p {
+        @include font-size(18);
+    }
+}
+
+.tagline {
+    padding-right: 5%;
+}
+
+.logo-svg {
+    .rolling-pin1, .rolling-pin2 {
+        fill: get-color("black");
+    }
+
+    .rolling-pin1 {
+        opacity: 0;
+    }
+
+    .rolling-pin2 {
+        opacity: 0;
+    }
+
+    .copy, .copy path {
+        fill: get-color("white");
+        opacity: 0.95;
+    }
+}
+
+@keyframes flash {
+    0%   { opacity: 1; }
+    15%  { opacity: 0.2; }
+    30%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/img/home-hero.png);
+    @include full-bg();
+
+    .logo {
+        position: relative;
+        max-width: 100%;
+        height: 60px;
+        margin-top: 30px;
+        opacity: 0.85;
+
+        @include media($desktop) {
+            height: 80px;
+        }
+    }
+
+    .info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        @include media($desktop) {
+            bottom: 20px;
+            left: 20px;
+            top: auto;
+        }
+    }
+
+    .info a {
+        opacity: 0.75;
+        transition: opacity 0.3s;
+    }
+
+    .info a:hover {
+        opacity: 1;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        position: relative;
+        font-weight: 400;
+    }
+
+    h4 {
+        font-family: "Marck Script";
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation-name: flash;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+        object {
+            height: 30px;
+        }
+    }
+}
+
+.arrow-icon {
+    fill: get-color("white");
+}
+
+.hero:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: get-color("black");
+    opacity: 0.65;
+}
+
+.title-bar {
+    display: inline-block;
+    border: 2px solid get-color("black");
+    border-radius: 5px;
+    padding: 7px 20px 2px;
+    font-family: "Blair";
+    font-weight: 400;
+    @include font-size(24);
+    line-height: 0.5em;
+
+    span {
+        font-family: "Blair";
+        font-weight: 300;
+        @include font-size(12);
+    }
+}
+
+.instagram-feed {
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+}
+
+.instagram-list {
+    display: inline-block;
+}
+
+.instagram-item {
+    display: inline-block;
+    position: relative;
+    float: left;
+    line-height: 0;
+    margin-top: 10px;
+    padding: 0 5px 10px 5px;
+    width: 50%;
+    overflow: hidden;
+    border-bottom: 1px solid get-color("pink700");
+
+    @include media(min-width 481px) {
+        width: 33.3%;
+
+        &:last-child {
+            display: none;
+        }
+    }
+
+    @include media($desktop) {
+        width: 20%;
+
+        &:last-child {
+            display: inherit;
+        }
+    }
+
+    .instagram-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 10px;
+        margin: 0 5px;
+        transform: translateY(110%);
+        transition: transform 0.3s;
+    }
+
+    .overlay {
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+    }
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        line-height: 1em;
+        font-size: 90%;
+        padding: 10px 15px;
+    }
+}
+
+.instagram-item:hover {
+    .instagram-overlay {
+        transform: translateY(0);
+    }
+}
+
+.instagram-item img {
+    width: 100%;
+    border-radius: 10px;
+}

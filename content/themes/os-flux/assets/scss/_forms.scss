@@ -1,0 +1,87 @@
+/* =Forms
+----------------------------------------------- */
+label {
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: em(10);
+    border: 1px solid get-color("black");
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    transition: all 0.3s;
+
+    &:focus {
+        border: 1px solid get-color("pink500");
+        box-shadow: 0 0 5px get-color("pink500");
+    }
+}
+
+.custom-select span {
+    display: block;
+    width: 100%;
+    padding: em(8);
+    position: relative;
+    border: 1px solid get-color("black");
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        background-image: url(assets/img/controller-play.svg);
+        background-size: cover;
+        background-repeat: none;
+        transform: rotate(90deg);
+        pointer-events: none;
+    }
+
+    select {
+        width: 102%;
+        position: relative;
+        left: 5px;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        outline: none;
+        -webkit-appearance: none;
+    }
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background-color: transparent;
+    color: get-color("black");
+    padding: 10px 20px;
+    border: 1px solid get-color("black");;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.no-touch input[type="submit"]:hover,
+.touch input[type="submit"]:active {
+    background-color: get-color("pink500");
+    border-color: get-color("pink500");
+    color: get-color("white");
+}
+
+.wpcf7-response-output {
+    width: 82.94039%;
+    margin-left: 8.5298% !important;
+    padding: 1em !important;
+    border-color: get-color("pink500") !important;
+    font-family: "Merriweather Sans";
+    font-size: em(16);
+}
