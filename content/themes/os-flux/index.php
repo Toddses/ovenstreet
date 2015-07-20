@@ -9,7 +9,7 @@ get_header(); ?>
 	<div class="main">
 
         <div class="hero text-center padded-6">
-            <object class="logo" type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg">You should really update your browser. Your version is so old.</object>
+            <object class="logo" type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/img/oven-street-bakery-logo.svg" title="This is our logo!">Oven Street Bakery Logo. It's an svg image and your browser is so old it doesn't support svg.</object>
             <div class="v-margin-3">
                 <h1 class="uppercase no-margin text-white">So <span class="text-pink500">good</span></h1>
                 <h4 class="no-margin text-white">you won't miss the gluten</h4>
@@ -17,8 +17,8 @@ get_header(); ?>
 
             <div class="social-links">
                 <div class="follow-us text-white desktop-only"><p>Follow Us!</p></div>
-                <a href="http://facebook.com/ovenstreet" target="_blank" class="svg-link" data-toggle=".follow-us" data-toggle-class="is-active" data-toggle-event="mouseover,mouseout"><object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/img/facebook-with-circle.svg">You should really update your browser. Your version is so old.</object></a>
-                <a href="http://instagram.com/ovenstreet" target="_blank" class="svg-link" data-toggle=".follow-us" data-toggle-class="is-active" data-toggle-event="mouseover,mouseout"><object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/img/instagram-with-circle.svg">You should really update your browser. Your version is so old.</object></a>
+                <a href="http://facebook.com/ovenstreet" target="_blank" class="svg-link" data-toggle=".follow-us" data-toggle-class="is-active" data-toggle-event="mouseover,mouseout"><object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/img/facebook-with-circle.svg">Oven Street Bakery's Facebook Page. It's an svg image and your browser is so old it doesn't support svg.</object></a>
+                <a href="http://instagram.com/ovenstreet" target="_blank" class="svg-link" data-toggle=".follow-us" data-toggle-class="is-active" data-toggle-event="mouseover,mouseout"><object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/img/instagram-with-circle.svg">Oven Street Bakery's Instagram Page. It's an svg image and your browser is so old it doesn't support svg.</object></a>
             </div>
 
             <div class="info text-white text-left">
@@ -27,7 +27,7 @@ get_header(); ?>
             </div>
 
             <div class="arrow">
-                <a href="#" class="svg-link skip" data-target="#feed"><object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-with-circle-down.svg">You should really update your browser. Your version is so old.</object></a>
+                <a href="#" class="svg-link skip" data-target="#feed"><object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/assets/img/chevron-with-circle-down.svg"> It's an svg image and your browser is so old it doesn't support svg.</object></a>
             </div>
         </div>
 

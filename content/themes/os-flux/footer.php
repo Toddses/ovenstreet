@@ -10,7 +10,7 @@
 	</div><!-- #content .site-content -->
 
 	<footer id="colophon" class="site-footer padded-4 bg-pink100 text-center" role="contentinfo">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/oven-street-bakery-logo.svg" />
 
         <div class="site-info v-margin-1">
             <p class="no-margin"><a href="mailto:<?php echo antispambot( 'info@ovenstreet.com' ); ?>"><?php echo antispambot( 'info@ovenstreet.com' ); ?></a></p>
