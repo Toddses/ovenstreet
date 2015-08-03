@@ -59,9 +59,19 @@ get_header(); ?>
                 <div class="row text-center">
                     <div class="sm-twelve lg-six columns lg-push-three">
                         <p class="bold">Saturdays</p>
-                        <p>Starting in August, you can find us at the <a href="https://www.facebook.com/huberheightsfarmersmarket" target="_blank" class="text-pink500">Huber Heights Farmer's Market</a></p>
+                        <p>Every Saturday between 9am and 1pm you can find us at the <a href="https://www.facebook.com/huberheightsfarmersmarket" target="_blank" class="text-pink500">Huber Heights Farmer's Market</a></p>
                         <p><a href="https://goo.gl/maps/2kSkT" target="_blank" class="text-pink500">6178 Chambersburg Road<br />Huber Heights, OH 45424</a></p>
-                        <p>We'll announce our first date at the Market soon, or <a href="#" class="skip text-pink500" data-target="#contact">Contact Us</a> for special orders!</p>
+                        <h4>This Week's Menu, August 8</h4>
+                        <p>Hamburger Buns (Packs of 4)<br/>
+                        Hot-dog Buns (Packs of 4)<br/>
+                        Sandwich Bread by the loaf<br/>
+                        Cinnamon Rolls<br/>
+                        Banana Walnut Mini Muffins<br/>
+                        Chocolate dipped, Peanut butter & Shortbread Candy Bars<br/>
+                        Blueberry Doughnuts <br/>
+                        Chocolate Cupcakes with Buttercream Frosting<br/>
+                        Pie, by the slice (pre order for whole pie) - apple, cherry, blueberry</p>
+                        <p>We'll be accepting pre-orders until Wednesday evening! Send 'em over with the form below!</p>
                     </div>
                 </div>
             </div>
