@@ -61,16 +61,12 @@ get_header(); ?>
                         <p class="bold">Saturdays</p>
                         <p>Every Saturday between 9am and 1pm you can find us at the <a href="https://www.facebook.com/huberheightsfarmersmarket" target="_blank" class="text-pink500">Huber Heights Farmer's Market</a></p>
                         <p><a href="https://goo.gl/maps/2kSkT" target="_blank" class="text-pink500">6178 Chambersburg Road<br />Huber Heights, OH 45424</a></p>
-                        <h4>This Week's Menu, August 8</h4>
-                        <p>Hamburger Buns (Packs of 4)<br/>
-                        Hot-dog Buns (Packs of 4)<br/>
-                        Sandwich Bread by the loaf<br/>
-                        Cinnamon Rolls<br/>
-                        Banana Walnut Mini Muffins<br/>
-                        Chocolate dipped, Peanut butter & Shortbread Candy Bars<br/>
-                        Blueberry Doughnuts <br/>
-                        Chocolate Cupcakes with Buttercream Frosting<br/>
-                        Pie, by the slice (pre order for whole pie) - apple, cherry, blueberry</p>
+                        <h4>This Week's Menu, August 15</h4>
+                        <p>Sandwich Bread by the Loaf<br />
+                        Cinnamon Rolls<br />
+                        Apple and Blueberry Cobbler<br />
+                        Strawberry and Raspberry Danish<br />
+                        Apple Cinnamon Sugar Cookies</p>
                         <p>We'll be accepting pre-orders until Wednesday evening! Send 'em over with the form below!</p>
                     </div>
                 </div>
