@@ -58,29 +58,16 @@ get_header(); ?>
                 <div><h5 class="uppercase no-margin title-bar">Find Us<br/><span>Where We Are</span></h5></div>
                 <div class="row text-center">
                     <div class="sm-twelve lg-six columns lg-push-three">
-                        <p class="bold">December 2015</p>
-                        <!--<p>Every Saturday between 9am and 1pm you can find us at the <a href="https://www.facebook.com/huberheightsfarmersmarket" target="_blank" class="text-pink500">Huber Heights Farmer's Market</a></p>
-                        <p><a href="https://goo.gl/maps/2kSkT" target="_blank" class="text-pink500">6178 Chambersburg Road<br />Huber Heights, OH 45424</a></p>-->
-                        <p>This month we will be offering several of our delicous goodies. Please fill out the form below to order! We do ask that orders be placed at least 3 days in advance. Looking forward to baking for you this holiday season!
-                        <h4>Menu</h4>
+                        <p>Every Saturday between 9am and 1pm you can find us at the <a href="https://www.facebook.com/huberheightsfarmersmarket" target="_blank" class="text-pink500">Huber Heights Farmer's Market</a></p>
+                        <p><a href="https://goo.gl/maps/2kSkT" target="_blank" class="text-pink500">6178 Chambersburg Road<br />Huber Heights, OH 45424</a></p>
+                        <p>Here is our menu for <span class="bold">Saturday, May 7, 2016</span>!</p>
                         <p>
-                        <strong>Pecan Pie</strong>: $18.00<br />
-                        <strong>Pecan Pumpkin Pie</strong>: $20.00<br />
-                        <strong>Apple Pie</strong>: $18.00<br />
-                        <br />
-                        <strong>Christmas Sugar Cookies Decorated w/ Buttercream Frosting</strong>: $10.00/dozen<br />
-                        <strong>Plain</strong>: $8/dozen<br />
-                        <strong>Large Chocolate Chip Cookies</strong>: $15.00/dozen<br />
-                        <br />
-                        <strong>Holiday Assortment Box</strong>:<br />
-                        (Pies, tarts, cookies, Danish, etc..Message for details)<br />
-                        GREAT FOR PARTIES or GIFTS!<br />
-                        <strong>Regular (about 14 pieces)</strong>: $15.00<br />
-                        <strong>Large (about 30 pieces)</strong>: $29.00<br />
-                        <br />
-                        <strong>Pumpkin Danish</strong>: $12.00/ 8 inch Danish<br />
-                        <strong>Cinnamon Rolls</strong>: $16.00/ 9 inch round pan<br />
-                        <strong>Pecan Sticky Buns</strong>: $15.00/ 9 inch round pan
+                        <strong>Sandwich Bread</strong>: $8.00<br />
+                        <strong>12" Pizza Crust</strong>: $7.00<br />
+                        <strong>Cinnamon Rolls</strong>: $3.00<br />
+                        <strong>Bag of Snack Mix</strong>: $5.00<br />
+                        <strong>Blueberry "Love Bird" Pie</strong>: $8.00<br />
+                        <strong>Mother's Day "Celebration" Cookies</strong>: $2.00<br />
                         </p>
                         <!--<p>We'll be accepting pre-orders until Wednesday evening! Send 'em over with the form below!</p>-->
                     </div>
