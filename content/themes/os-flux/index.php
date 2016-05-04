@@ -67,7 +67,7 @@ get_header(); ?>
                         <strong>Cinnamon Rolls</strong>: $3.00<br />
                         <strong>Bag of Snack Mix</strong>: $5.00<br />
                         <strong>Blueberry "Love Bird" Pie</strong>: $8.00<br />
-                        <strong>Mother's Day "Celebration" Cookies</strong>: $2.00<br />
+                        <strong>Mother's Day "Celebration" Cookies</strong>: $3.00<br />
                         </p>
                         <!--<p>We'll be accepting pre-orders until Wednesday evening! Send 'em over with the form below!</p>-->
                     </div>
