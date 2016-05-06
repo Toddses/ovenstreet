@@ -65,7 +65,7 @@ get_header(); ?>
                         <strong>Sandwich Bread</strong>: $8.00<br />
                         <strong>12" Pizza Crust</strong>: $7.00<br />
                         <strong>Cinnamon Rolls</strong>: $3.00<br />
-                        <strong>Bag of Snack Mix</strong>: $5.00<br />
+                        <strong>Bag of Snack Mix</strong>: $4.00<br />
                         <strong>Blueberry "Love Bird" Pie</strong>: $8.00<br />
                         <strong>Mother's Day "Celebration" Cookies</strong>: $3.00<br />
                         </p>
