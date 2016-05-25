@@ -60,14 +60,12 @@ get_header(); ?>
                     <div class="sm-twelve lg-six columns lg-push-three">
                         <p>Every Saturday between 9am and 1pm you can find us at the <a href="https://www.facebook.com/huberheightsfarmersmarket" target="_blank" class="text-pink500">Huber Heights Farmer's Market</a></p>
                         <p><a href="https://goo.gl/maps/2kSkT" target="_blank" class="text-pink500">6178 Chambersburg Road<br />Huber Heights, OH 45424</a></p>
-                        <p>Here is our menu for <span class="bold">Saturday, May 7, 2016</span>!</p>
+                        <p>Here is our menu for <span class="bold">Saturday, May 28, 2016</span>! We will be accepting pre-orders until Friday - please fill out the form below to preorder.</p>
                         <p>
-                        <strong>Sandwich Bread</strong>: $8.00<br />
-                        <strong>12" Pizza Crust</strong>: $7.00<br />
-                        <strong>Cinnamon Rolls</strong>: $3.00<br />
-                        <strong>Bag of Snack Mix</strong>: $4.00<br />
-                        <strong>Blueberry "Love Bird" Pie</strong>: $8.00<br />
-                        <strong>Mother's Day "Celebration" Cookies</strong>: $3.00<br />
+                        <strong>Sandwich Bread</strong><br />
+                        <strong>Cinnamon Rolls</strong><br />
+                        <strong>Blueberry Pie</strong><br />
+                        <strong>Fudge Brownies</strong><br />
                         </p>
                         <!--<p>We'll be accepting pre-orders until Wednesday evening! Send 'em over with the form below!</p>-->
                     </div>
