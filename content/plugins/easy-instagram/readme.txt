@@ -2,8 +2,8 @@
 Contributors: VeloMedia
 Tags: Instagram, photos, gallery, images, widget, shortcode, hashtag
 Requires at least: 3.0.1
-Tested up to: 3.8.1
-Stable tag: 3.1
+Tested up to: 4.4.2
+Stable tag: 3.3
 
 
 Simply, quickly and easily, displays one or more Instagram images from a User ID
@@ -78,6 +78,9 @@ To Install "Easy Instagram"...
                 * Redirect URI
 
 **Authorize your Instagram API client in WordPress**
+
+ Going Live: Applications created on or after Nov 17, 2015 will start in Sandbox Mode and need to go through review process in order to go live. Please follow the information here: https://www.instagram.com/developer/review/, if you want to go live.
+ Please note that in Sandbox mode you can use only the "user_id" option, as tags are not available.
 
  8. Back in your WordPress CMS, navigate to the new "Easy Instagram" panel, in the CMS menu under "Settings". Copy and paste the Client ID and Client Secret fields from the Instagram "Manage Clients" panel over to the appropriate fields on the plugin Settings page.  Enter the desired cache expire time in minutes.  Then click the "Save Settings" button.
  9. Under the "Instagram Account" heading, click the "Instagram Login" link and authorize Easy Instagram to access your account by entering your Instagram username and password.
@@ -209,7 +212,15 @@ jQuery(document).on('afterEasyInstagramLoad', function() { doLightBox(); });
 
 == Changelog ==
 
-= 3.1 = 
+= 3.3 =
+* New: Exclude items by username or tag
+* New: Clear cache admin option
+
+= 3.2 =
+* New: New Instagram policy information
+* Fix: Some images cannot be saved to cache
+
+= 3.1 =
 * New: Add "dynamic_thumbnail", "dynamic_normal" or "dynamic_large" in thumb_size
 * New: Prev/Next image navigation from within Thickbox or Colorbox popup
 * New: Flag for disabling AJAX content loading

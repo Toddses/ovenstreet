@@ -3,11 +3,20 @@
 			= $this->get_instagram_settings();
 
 	$logout_requested = false;
+
 	if ( isset( $_POST['instagram-logout'] )
 			&& check_admin_referer( 'ei_user_logout_nonce', 'ei_user_logout_nonce' ) ) {
 		$this->set_access_token( '' );
 		update_option( 'ei_access_token', '' );
 		$logout_requested = true;
+	}
+	if ( isset( $_POST['instagram-clear-cache'] )
+			&& check_admin_referer( 'ei_clear_cache_nonce', 'ei_clear_cache_nonce' ) ) {
+
+		$this->clear_cache_event_action();
+		$message = __( 'Cache has been cleared.', 'Easy_Instagram' );
+		add_settings_error( 'easy-instagram', 'cache-cleared', $message, 'updated' );
+		settings_errors();
 	}
 
 	$config = $this->get_instagram_config();
@@ -108,6 +117,18 @@
 					</td>
 				</tr>
 		<?php endif; ?>
+		<tr>
+			<td colspan='2'><h3><?php _e( 'Clear Cache', 'Easy_Instagram' ); ?></h3></td>
+		</tr>
+		<tr>
+			<td>
+				<?php wp_nonce_field( 'ei_clear_cache_nonce', 'ei_clear_cache_nonce' ); ?>
+			</td>
+			<td>
+				<input type='submit' name='instagram-clear-cache' value="<?php esc_attr_e( 'Clear Cache', 'Easy_Instagram' );?>" />
+			</td>
+		</tr>
+
 		<?php if ( ! is_null( $instagram_exception ) ): ?>
 			<tr>
 				<td colspan='2' class='exception'>
@@ -123,4 +144,4 @@
 	<div id='ei-help'>
 		<?php do_settings_sections( 'easy_instagram_help' ); ?>
 	</div>
-</div>	
+</div>

@@ -14,7 +14,7 @@ class Easy_Instagram_Cache {
 		$this->default_cache_path = sprintf( '%s/%s', EASY_INSTAGRAM_PLUGIN_PATH, $this->cache_directory_name );
 		$this->default_cache_url = plugins_url( $this->cache_directory_name, dirname( __FILE__ ) );
 	}
-	
+
 	//================================================================
 	// [todo] - check visibility of all methods
 	public function get_cache_dir() {
@@ -60,7 +60,7 @@ class Easy_Instagram_Cache {
 		$path = $this->get_cache_dir() . $hash . '.cache';
 
 		$cached_data = $this->_get_cache_file_content( $path );
-		if ( ( null === $cached_data ) || !isset( $cached_data['data'] ) 
+		if ( ( null === $cached_data ) || !isset( $cached_data['data'] )
 			|| !isset( $cached_data['cache_timestamp'] ) || !isset( $cached_data['requested_count'] ) ) {
 			return array( null, false ); // No cached data found
 		}
@@ -138,7 +138,7 @@ class Easy_Instagram_Cache {
 		}
 
 		$new_cached_data = $this->_get_cache_file_content( $new_cache_path );
-		
+
 		// Get files that are in old cache and not in new cache and delete it
 		$new_images = array();
 		foreach ( $new_cached_data['data'] as $elem ) {
@@ -262,13 +262,15 @@ class Easy_Instagram_Cache {
 		$now = time();
 		$delta = ( $now - $cached_data['cache_timestamp'] ) / 60;
 
+		$clear = filter_input( INPUT_POST, 'instagram-clear-cache' );
+
 		$valid_files = array();
 
 		if ( is_null( $cached_data ) ) {
 			return $valid_files;
 		}
 
-		if ( $delta > 24 * 60 )	{
+		if ( $delta > 24 * 60 || isset( $clear ) )	{
 			if ( !empty( $cached_data['data'] ) ) {
 				$cache_dir = $this->get_cache_dir();
 				$files = scandir( $cache_dir );
@@ -335,10 +337,10 @@ class Easy_Instagram_Cache {
 
 	function save_remote_image( $remote_image_url, $id ) {
 		$filename = '';
-		if ( preg_match( '/([^\/\.\?\&]+)\.([^\.\?\/]+)(\?[^\.\/]*)?$/', $remote_image_url, $matches ) ) {
-			$filename .= $matches[1] . '_' . $id . '.' . $matches[2];
-		}
-		else {
+		$remote_name = parse_url( $remote_image_url, PHP_URL_PATH );
+		if ( $remote_name ) {
+			$filename  .= $id . str_replace( '/', '-', $remote_name );
+		} else {
 			return null;
 		}
 
@@ -383,15 +385,15 @@ class Easy_Instagram_Cache {
 	//=========================================================================
 
 	function cache_live_data( $live_data, $endpoint_id, $endpoint_type, $limit ) {
-		$cache_data = array( 
+		$cache_data = array(
 			'cache_timestamp' => time(),
 			'requested_count' => $limit,
 			'data' => array()
 		);
-		
+
 		$unique_rel = md5( $endpoint_type . $endpoint_id );
 		$utils = new Easy_Instagram_Utils();
-		
+
 		foreach ( $live_data as $elem ) {
 			list( $user_name, $caption_from, $caption_text, $caption_created_time)
 				= $utils->get_usename_caption( $elem );
@@ -442,7 +444,7 @@ class Easy_Instagram_Cache {
 						$cached_elem['video_'.$video_size] = array(
 							'width'  => $videos->$video_size->width,
 							'height' => $videos->$video_size->height );
-							
+
 						$cached_elem['video_'.$video_size]['url'] = $videos->$video_size->url;
 					}
 				}
@@ -498,7 +500,7 @@ class Easy_Instagram_Cache {
 		}
 
 		$thumb_path = $this->get_cached_file_path( $thumb_basename );
-		
+
 		if ( file_exists( $thumb_path ) ) {
 			$thumb_url = $this->get_cached_file_url( $thumb_basename );
 			return $thumb_url;
